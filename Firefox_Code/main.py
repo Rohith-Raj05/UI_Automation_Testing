@@ -1,6 +1,6 @@
 
 
-from Functional_UI_Testing.Firefox_Code.screenshot_taker import screenshot_taker
+from screenshot_taker import take_screenshot
 
 
 def main():
@@ -24,7 +24,7 @@ def main():
 
     for idx, url in enumerate(urls, start=1):  # Start the index from 1
         for width, height in resolutions:
-            screenshot_taker(url, 'firefox', width, height, idx)
+            take_screenshot(url, 'firefox', width, height, idx)
 
 if __name__ == "__main__":
     main()
