@@ -18,7 +18,7 @@ def take_full_page_screenshot(driver, file_path, width):
     driver.save_screenshot(file_path)
 
 
-def screenshot_taker(url, browser, width, height, idx):
+def take_screenshot(url, browser, width, height, idx):
     driver = None
     try:
         driver = get_webdriver(browser)
